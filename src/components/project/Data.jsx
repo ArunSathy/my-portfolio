@@ -7,6 +7,13 @@ export const projectsData = [
         id: 1,
         image: Work1,
         title: 'GreenCart',
+        link: 'https://greencart-murex-one.vercel.app'
+    },
+    {
+        id: 2,
+        image: Work2,
+        title: 'QuickChat',
+        link: 'https://chat-app-olive-seven-81.vercel.app'
     }
 ]
 
