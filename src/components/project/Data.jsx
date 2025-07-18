@@ -14,6 +14,12 @@ export const projectsData = [
         image: Work2,
         title: 'QuickChat',
         link: 'https://chat-app-olive-seven-81.vercel.app'
+    },
+    {
+        id: 3,
+        image: Work3,
+        title: 'QuickBlog',
+        link: 'https://quick-blog-chi-six.vercel.app'
     }
 ]
 
