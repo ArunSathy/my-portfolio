@@ -49,6 +49,7 @@
 /* For Large Devices */
 @media screen and (max-width: 992px) {
     .work__container {
+        grid-template-columns: 2fr;
         gap: 2.5rem;
     }
 
@@ -68,7 +69,7 @@
 /* For medium Devices */
 @media screen and (max-width: 768px) {
     .work__container {
-        grid-template-columns:max-content;
+        grid-template-columns: 2fr;
         gap: 1.25rem;
     }
 
