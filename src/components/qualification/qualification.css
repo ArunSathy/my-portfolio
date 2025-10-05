@@ -19,8 +19,8 @@
 
 .qualification__button:hover {
     color: var(--title-color-dark);
-    background-color: darkgrey;
-    background: round;
+    background-color: rgb(190, 190, 190);
+    border-radius: 1rem ;
 }
 
 .qualification__icon {
@@ -30,8 +30,8 @@
 
 .qualification__active {
     color: var(--title-color-dark);
-    background-color: darkgrey;
-    background: round;
+    background-color: rgb(190, 190, 190);
+    border-radius: 1rem;
 }
 
 .qualification__sections {
