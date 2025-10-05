@@ -19,10 +19,6 @@
 
 .qualification__button:hover {
     color: var(--title-color-dark);
-    background-color: rgb(224, 224, 224);
-    border-radius: 1rem ;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 
 .qualification__icon {
@@ -32,10 +28,11 @@
 
 .qualification__active {
     color: var(--title-color-dark);
-    background-color: rgb(224, 224, 224);
-    border-radius: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 0rem 0.5rem;
 }
 
 .qualification__sections {
