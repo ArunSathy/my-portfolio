@@ -20,6 +20,7 @@
 .qualification__button:hover {
     color: var(--title-color-dark);
     background-color: darkgrey;
+    background: round;
 }
 
 .qualification__icon {
@@ -30,6 +31,7 @@
 .qualification__active {
     color: var(--title-color-dark);
     background-color: darkgrey;
+    background: round;
 }
 
 .qualification__sections {
