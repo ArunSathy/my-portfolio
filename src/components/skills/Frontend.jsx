@@ -1,81 +1,81 @@
 import React from 'react'
 
 const Frontend = () => {
-  return (
-    <div className="skills__content">
-        <h3 className="skills_title">Frontend</h3>
+    return (
+        <div className="bg-container border border-[rgba(0,0,0,0.1)] p-[2rem_4rem] rounded-[1.25rem] sm:p-6 xs:p-4">
+            <h3 className="text-normal font-medium text-center mb-6">Frontend</h3>
 
-        <div className="skills__box">
-            <div className="skills_group">
+            <div className="flex justify-center gap-x-10 xs:gap-x-5">
+                <div className="grid items-start gap-y-4">
 
-                <div className="skills__data">
-                    <i class='bx bx-badge-check' ></i>
+                    <div className="flex gap-x-2">
+                        <i class='bx bx-badge-check text-[1rem] text-title' ></i>
 
-                    <div>
-                        <h3 className="skills__name">React js</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <div>
+                            <h3 className="text-normal font-medium leading-[18px] xs:text-small">React js</h3>
+                            <span className="text-tiny">Intermediate</span>
+                        </div>
+
+                    </div>
+
+                    <div className="flex gap-x-2">
+                        <i class='bx bx-badge-check text-[1rem] text-title' ></i>
+
+                        <div>
+                            <h3 className="text-normal font-medium leading-[18px] xs:text-small">Next js</h3>
+                            <span className="text-tiny">Basic</span>
+                        </div>
+
+                    </div>
+
+                    <div className="flex gap-x-2">
+                        <i class='bx bx-badge-check text-[1rem] text-title' ></i>
+
+                        <div>
+                            <h3 className="text-normal font-medium leading-[18px] xs:text-small">Tailwind CSS</h3>
+                            <span className="text-tiny">Intermediate</span>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <div className="skills__data">
-                    <i class='bx bx-badge-check' ></i>
+                <div className="grid items-start gap-y-4">
 
-                    <div>
-                        <h3 className="skills__name">Next js</h3>
-                        <span className="skills__level">Basic</span>
-                    </div>
-                    
-                </div>
+                    <div className="flex gap-x-2">
+                        <i class='bx bx-badge-check text-[1rem] text-title' ></i>
 
-                <div className="skills__data">
-                    <i class='bx bx-badge-check' ></i>
+                        <div>
+                            <h3 className="text-normal font-medium leading-[18px] xs:text-small">Javascript</h3>
+                            <span className="text-tiny">Intermediate</span>
+                        </div>
 
-                    <div>
-                        <h3 className="skills__name">Tailwind CSS</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <div className="skills_group">
-
-                <div className="skills__data">
-                    <i class='bx bx-badge-check' ></i>
-
-                    <div>
-                        <h3 className="skills__name">Javascript</h3>
-                        <span className="skills__level">Intermediate</span>
                     </div>
 
-                </div>
+                    <div className="flex gap-x-2">
+                        <i class='bx bx-badge-check text-[1rem] text-title' ></i>
 
-                <div className="skills__data">
-                    <i class='bx bx-badge-check' ></i>
+                        <div>
+                            <h3 className="text-normal font-medium leading-[18px] xs:text-small">TypeScript</h3>
+                            <span className="text-tiny">Basic</span>
+                        </div>
 
-                    <div>
-                        <h3 className="skills__name">TypeScript</h3>
-                        <span className="skills__level">Basic</span>
                     </div>
-                    
-                </div>
 
-                <div className="skills__data">
-                    <i class='bx bx-badge-check' ></i>
+                    <div className="flex gap-x-2">
+                        <i class='bx bx-badge-check text-[1rem] text-title' ></i>
 
-                    <div>
-                        <h3 className="skills__name">GIT</h3>
-                        <span className="skills__level">Advanced</span>
+                        <div>
+                            <h3 className="text-normal font-medium leading-[18px] xs:text-small">GIT</h3>
+                            <span className="text-tiny">Advanced</span>
+                        </div>
+
                     </div>
-                    
+
                 </div>
-                
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Frontend

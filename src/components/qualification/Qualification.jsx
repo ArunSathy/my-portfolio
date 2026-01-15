@@ -1,115 +1,114 @@
 import React, { useState } from 'react'
-import './qualification.css'
 
 const Qualification = () => {
 
     const [toggleState, setToggleState] = useState(1);
 
-    const toggleTab = (index ) => {
+    const toggleTab = (index) => {
         setToggleState(index)
     }
 
-  return (
-    <section className="qualification section" id='qualification'>
-        <h2 className="section__title">Qualification</h2>
-        <span className="section__subtitle">My Personal Journey</span>
+    return (
+        <section className="section" id='qualification'>
+            <h2 className="section__title">Qualification</h2>
+            <span className="section__subtitle">My Personal Journey</span>
 
-        <div className="qualification__container container">
+            <div className="container max-w-[768px] md:mx-[1.5rem]">
 
-            <div className="qualification__tabs">
+                <div className="flex justify-center mb-8">
 
-                <div className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex" } onClick={()=>toggleTab(1)} >
-                    
-                    <i className="uil uil-graduation-cap qualification__icon"></i>
-                    Education
+                    <div className={toggleState === 1 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 button--flex sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors button--flex sm:mx-3"} onClick={() => toggleTab(1)} >
+
+                        <i className="uil uil-graduation-cap text-[1.8rem] mr-1"></i>
+                        Education
+                    </div>
+
+                    <div className={toggleState === 2 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 button--flex sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors button--flex sm:mx-3"} onClick={() => toggleTab(2)}>
+                        <i className="uil uil-briefcase-alt text-[1.8rem] mr-1"></i>
+                        Experience
+                    </div>
                 </div>
 
-                <div className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex" } onClick={()=>toggleTab(2)}>
-                    <i className="uil uil-briefcase-alt qualification__icon"></i>
-                    Experience
+                <div className="grid grid-cols-[0.5fr] justify-center sm:grid-cols-1">
+
+                    <div className={toggleState === 1 ? "block" : "hidden"}>
+
+                        <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-6 xs:gap-x-2">
+                            <div>
+                                <h3 className="text-normal font-medium">BE Computer Science & Engineering</h3>
+                                <span className="inline-block text-small mb-4">Anna University</span>
+                                <div className="text-small">
+                                    <i className="uil uil-calendar-alt"></i> 2016 - 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="inline-block w-[13px] h-[13px] bg-text rounded-full"></span>
+                                <span className="block w-[1px] h-full bg-text translate-x-[6px] -translate-y-[7px]"></span>
+                            </div>
+
+                        </div>
+
+                        <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-6 xs:gap-x-2">
+                            <div></div>
+                            <div>
+                                <span className="inline-block w-[13px] h-[13px] bg-text rounded-full"></span>
+                                <span className="block w-[1px] h-full bg-text translate-x-[6px] -translate-y-[7px]"></span>
+                            </div>
+                            <div>
+                                <h3 className="text-normal font-medium">Higher Secondary</h3>
+                                <span className="inline-block text-small mb-4">Kerala State Board</span>
+                                <div className="text-small">
+                                    <i className="uil uil-calendar-alt"></i> 2014 - 2016
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-6 xs:gap-x-2">
+                            <div>
+                                <h3 className="text-normal font-medium">SSLC</h3>
+                                <span className="inline-block text-small mb-4">Kerala State Board</span>
+                                <div className="text-small">
+                                    <i className="uil uil-calendar-alt"></i> 2013 - 2014
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="inline-block w-[13px] h-[13px] bg-text rounded-full"></span>
+                                <span className="block w-[1px] h-full bg-text translate-x-[6px] -translate-y-[7px]"></span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div className={toggleState === 2 ? "block" : "hidden"}>
+
+                        <div className="grid grid-cols-[1fr_max-content_1fr] gap-x-6 xs:gap-x-2">
+                            <div></div>
+                            <div>
+                                <span className="inline-block w-[13px] h-[13px] bg-text rounded-full"></span>
+                                <span className="block w-[1px] h-full bg-text translate-x-[6px] -translate-y-[7px]"></span>
+                            </div>
+                            <div>
+                                <h3 className="text-normal font-medium">Digital Marketing Associate</h3>
+                                <span className="inline-block text-small mb-4">Amazon</span>
+                                <div className="text-small">
+                                    <i className="uil uil-calendar-alt"></i> 2022 - Present
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
-
-            <div className="qualification__sections">
-
-                <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
-
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">BE Computer Science & Engineering</h3>
-                            <span className="qualification__subtitle">Anna University</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2016 - 2020
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-
-                    </div>
-
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Higher Secondary</h3>
-                            <span className="qualification__subtitle">Kerala State Board</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2014 - 2016
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">SSLC</h3>
-                            <span className="qualification__subtitle">Kerala State Board</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2013 - 2014
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
-
-                    <div className="qualification__data">
-                        <div></div>
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Digital Marketing Associate</h3>
-                            <span className="qualification__subtitle">Amazon</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2022 - Present
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Qualification

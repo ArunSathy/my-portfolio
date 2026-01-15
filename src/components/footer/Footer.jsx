@@ -1,11 +1,10 @@
 import React from 'react'
-import './footer.css'
 
 const Footer = () => {
     return (
-        <footer className="footer">
-            <div className="footer__container container">
-                <h1 className="footer__title">Arun Sathyan</h1>
+        <footer className="bg-container border-t border-[rgba(0,0,0,0.1)]">
+            <div className="container py-8">
+                <h1 className="text-title text-center mb-8 font-medium">Arun Sathyan</h1>
 
                 {/* <ul className="footer__list">
                     <li>
@@ -19,15 +18,15 @@ const Footer = () => {
                     </li>
                 </ul> */}
 
-                <div className="footer__social">
-                    <a href="https://www.linkedin.com/in/arun-sathyan-a65504173/" className="footer__social-link" target='_blank'><i class="bx bxl-linkedin"></i></a>
+                <div className="flex justify-center gap-x-[1.125rem]">
+                    <a href="https://www.linkedin.com/in/arun-sathyan-a65504173/" className="bg-title text-container p-[0.4rem] rounded-lg inline-flex text-[1.125rem] hover:bg-title-dark transition-colors lg:p-1 lg:rounded lg:text-[1rem]" target='_blank' rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
 
-                    <a href="https://www.instagram.com/iam_arun__s?igsh=bDBtMWJxd3BkYXo5" className="footer__social-link" target='_blank'><i class="bx bxl-instagram"></i></a>
+                    <a href="https://www.instagram.com/iam_arun__s?igsh=bDBtMWJxd3BkYXo5" className="bg-title text-container p-[0.4rem] rounded-lg inline-flex text-[1.125rem] hover:bg-title-dark transition-colors lg:p-1 lg:rounded lg:text-[1rem]" target='_blank' rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
 
-                    <a href="https://github.com/ArunSathy" className="footer__social-link" target='_blank'><i class="bx bxl-github"></i></a>
+                    <a href="https://github.com/ArunSathy" className="bg-title text-container p-[0.4rem] rounded-lg inline-flex text-[1.125rem] hover:bg-title-dark transition-colors lg:p-1 lg:rounded lg:text-[1rem]" target='_blank' rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
                 </div>
-                <span className='footer__copy'>
-                &#169; Arun Sathyan. All rights reserved.
+                <span className='block mt-[4.5rem] text-title text-center text-smaller'>
+                    &#169; Arun Sathyan. All rights reserved.
                 </span>
             </div>
         </footer>

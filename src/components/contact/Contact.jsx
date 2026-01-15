@@ -1,80 +1,98 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import './contact.css'
+import Notification from '../notification/Notification';
 
 const Contact = () => {
 
     const form = useRef();
+    const [notification, setNotification] = useState(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs
-      .sendForm('service_edrx13y', 'template_f5zzsbi', form.current, {
-        publicKey: 'hNgtQlV2nhRMSNitp',
-      })
-      e.target.reset();
-  }
+        emailjs
+            .sendForm('service_edrx13y', 'template_f5zzsbi', form.current, {
+                publicKey: 'hNgtQlV2nhRMSNitp',
+            })
+            .then(
+                () => {
+                    setNotification({
+                        message: 'Your message has been sent successfully!',
+                        type: 'success'
+                    });
+                    e.target.reset();
+                },
+                (error) => {
+                    setNotification({
+                        message: 'Oops! Something went wrong. Please try again.',
+                        type: 'error'
+                    });
+                    console.error('FAILED...', error.text);
+                },
+            );
+    }
+
+    const closeNotification = () => setNotification(null);
 
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Contact Me</h2>
             <span className="section__subtitle">Get in Touch</span>
 
-            <div className="contact__container container grid">
+            <div className="container grid grid-cols-[repeat(2,max-content)] justify-center gap-x-24 pb-12 lg:gap-x-12 md:grid-cols-1 md:gap-y-12">
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
+                    <h3 className="text-center text-h3 font-medium mb-6">Talk to me</h3>
 
-                    <div className="contact__info">
+                    <div className="grid gap-y-4 grid-cols-[300px] md:justify-center sm:grid-cols-1 sm:w-full">
 
-                        <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i>
-                            <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">arunsathyan660@gmail.com</span>
+                        <div className="bg-container border border-[rgba(0,0,0,0.1)] p-4 rounded-xl text-center sm:p-3">
+                            <i className="bx bx-mail-send text-[2rem] text-title mb-1 block"></i>
+                            <h3 className="font-medium text-small">Email</h3>
+                            <span className="block mb-3 text-small">arunsathyan660@gmail.com</span>
 
-                            <a href="mailto:arunsathyan660@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i> </a>
+                            <a href="mailto:arunsathyan660@gmail.com" className="text-text text-small inline-flex items-center justify-center gap-x-1 hover:text-text group">Write me <i className="bx bx-right-arrow-alt text-[1rem] transition-transform duration-300 group-hover:translate-x-1"></i> </a>
                         </div>
 
-                        <div className="contact__card">
-                            <i class="bx bxl-whatsapp contact__card-icon"></i>
-                            <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">91+ 9495873194</span>
+                        <div className="bg-container border border-[rgba(0,0,0,0.1)] p-4 rounded-xl text-center sm:p-3">
+                            <i class="bx bxl-whatsapp text-[2rem] text-title mb-1 block"></i>
+                            <h3 className="font-medium text-small">Whatsapp</h3>
+                            <span className="block mb-3 text-small">91+ 9495873194</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=9495873194" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i> </a>
+                            <a href="https://api.whatsapp.com/send?phone=9495873194" className="text-text text-small inline-flex items-center justify-center gap-x-1 hover:text-text group">Write me <i className="bx bx-right-arrow-alt text-[1rem] transition-transform duration-300 group-hover:translate-x-1"></i> </a>
                         </div>
 
-                        <div className="contact__card">
-                            <i className="bx bxl-telegram contact__card-icon"></i>
-                            <h3 className="contact__card-title">Telegram</h3>
-                            <span className="contact__card-data">arunsathyan1998</span>
+                        <div className="bg-container border border-[rgba(0,0,0,0.1)] p-4 rounded-xl text-center sm:p-3">
+                            <i className="bx bxl-telegram text-[2rem] text-title mb-1 block"></i>
+                            <h3 className="font-medium text-small">Telegram</h3>
+                            <span className="block mb-3 text-small">arunsathyan1998</span>
 
-                            <a href="t.me/arunsathyan1998" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i> </a>
+                            <a href="t.me/arunsathyan1998" className="text-text text-small inline-flex items-center justify-center gap-x-1 hover:text-text group">Write me <i className="bx bx-right-arrow-alt text-[1rem] transition-transform duration-300 group-hover:translate-x-1"></i> </a>
                         </div>
 
                     </div>
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me</h3>
+                    <h3 className="text-center text-h3 font-medium mb-6">Write me</h3>
 
-                    <form ref={form} onSubmit={sendEmail} className="contact__form">
-                        <div className="contact__form-div">
-                            <label className="contact__form-tag">Name</label>
-                            <input type="text" name='name' className='contact__form-input' placeholder='enter your name' />
+                    <form ref={form} onSubmit={sendEmail} className="w-[360px] md:mx-auto sm:w-full">
+                        <div className="relative mb-8 h-[4rem] xs:mb-6">
+                            <label className="absolute top-[-0.75rem] left-[1.25rem] text-small p-1 bg-body z-10">Name</label>
+                            <input type="text" name='name' className='absolute top-0 left-0 w-full h-full border-2 border-[rgba(0,0,0,0.3)] bg-transparent text-text outline-none rounded-xl p-6 z-0 focus:border-title sm:p-4' placeholder='enter your name' />
                         </div>
 
-                        <div className="contact__form-div">
-                            <label className="contact__form-tag">Email</label>
-                            <input type="email" name='email' className='contact__form-input' placeholder='enter your email' />
+                        <div className="relative mb-8 h-[4rem] xs:mb-6">
+                            <label className="absolute top-[-0.75rem] left-[1.25rem] text-small p-1 bg-body z-10">Email</label>
+                            <input type="email" name='email' className='absolute top-0 left-0 w-full h-full border-2 border-[rgba(0,0,0,0.3)] bg-transparent text-text outline-none rounded-xl p-6 z-0 focus:border-title sm:p-4' placeholder='enter your email' />
                         </div>
 
-                        <div className="contact__form-div">
-                            <label className="contact__form-tag">Message</label>
-                            <textarea name="message" cols="30" rows="10" placeholder='enter your message' className='contact__form-input contact__form-area'></textarea>
+                        <div className="relative mb-8 h-[11rem]">
+                            <label className="absolute top-[-0.75rem] left-[1.25rem] text-small p-1 bg-body z-10">Message</label>
+                            <textarea name="message" cols="30" rows="10" placeholder='enter your message' className='absolute top-0 left-0 w-full h-full border-2 border-[rgba(0,0,0,0.3)] bg-transparent text-text outline-none rounded-xl p-6 z-0 resize-none focus:border-title'></textarea>
                         </div>
-                        
-                        <button className="button button--flex message__button">Send Message
+
+                        <button className="button button--flex">Send Message
                             <i class="uil uil-message button__icon"></i>
                         </button>
 
@@ -82,6 +100,13 @@ const Contact = () => {
                 </div>
 
             </div>
+            {notification && (
+                <Notification
+                    message={notification.message}
+                    type={notification.type}
+                    onClose={closeNotification}
+                />
+            )}
         </section>
     )
 }

@@ -3,12 +3,12 @@ import { assets } from '../../assets/assets'
 
 const ScrollDown = () => {
   return (
-    <div className="home__scroll">
-        <a href="#about" className="home__scroll-button button--flex wheel">
-            <img src={assets.scrollicon} alt="" />
-            <span className="home__scroll-name">Scroll Down</span>
-            <i class='uil uil-arrow-down home__scroll-arrow'></i>
-        </a>
+    <div className="ml-[9.25rem] lg:ml-[7.5rem] md:hidden">
+      <a href="#about" className="button--flex animate-scroll transition-colors">
+        <img src={assets.scrollicon} alt="" />
+        <span className="text-title font-medium mr-1 ml-[2px]">Scroll Down</span>
+        <i class='uil uil-arrow-down text-[1.25rem] text-title'></i>
+      </a>
     </div>
   )
 }
