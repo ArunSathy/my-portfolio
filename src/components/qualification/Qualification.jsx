@@ -13,7 +13,7 @@ const Qualification = () => {
             <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My Personal Journey</span>
 
-            <div className="container max-w-[768px] md:mx-[1.5rem]">
+            <div className="container max-w-[768px]">
 
                 <div className="flex justify-center mb-8">
 

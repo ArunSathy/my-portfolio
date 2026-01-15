@@ -8,7 +8,7 @@ const Skills = () => {
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">My Technical Skills</span>
 
-      <div className="container grid grid-cols-[repeat(2,350px)] gap-x-12 justify-center lg:grid-cols-max lg:gap-y-8 md:grid-cols-1 sm:grid-cols-1">
+      <div className="container grid grid-cols-2 gap-x-12 justify-center lg:grid-cols-1 lg:gap-y-8">
         <Frontend />
         <Backend />
       </div>

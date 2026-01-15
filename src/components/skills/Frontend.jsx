@@ -2,10 +2,10 @@ import React from 'react'
 
 const Frontend = () => {
     return (
-        <div className="bg-container border border-[rgba(0,0,0,0.1)] p-[2rem_4rem] rounded-[1.25rem] sm:p-6 xs:p-4">
+        <div className="bg-container border border-[rgba(0,0,0,0.1)] p-[2rem_4rem] rounded-[1.25rem] sm:p-4 xs:p-2">
             <h3 className="text-normal font-medium text-center mb-6">Frontend</h3>
 
-            <div className="flex justify-center gap-x-10 xs:gap-x-5">
+            <div className="flex justify-center gap-x-10 sm:gap-x-4 xs:gap-x-2">
                 <div className="grid items-start gap-y-4">
 
                     <div className="flex gap-x-2">

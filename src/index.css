@@ -13,15 +13,21 @@
         }
     }
 
-    @media (max-width: 350px) {
+    @media (max-width: 576px) {
         .container {
             @apply mx-[1rem];
         }
     }
 
+    @media (max-width: 350px) {
+        .container {
+            @apply mx-[0.5rem];
+        }
+    }
+
     .grid {
         display: grid;
-        @apply gap-[1.5rem];
+        @apply gap-[1.5rem] sm:gap-[1rem];
     }
 
     .section {

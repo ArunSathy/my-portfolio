@@ -4,6 +4,12 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
+        screens: {
+            'lg': { 'max': '992px' },
+            'md': { 'max': '768px' },
+            'sm': { 'max': '576px' },
+            'xs': { 'max': '350px' },
+        },
         extend: {
             colors: {
                 title: "var(--title-color)",
@@ -30,12 +36,7 @@ module.exports = {
                 fixed: "var(--z-fixed)",
                 modal: "var(--z-modal)",
             },
-            screens: {
-                'lg': { 'max': '992px' },
-                'md': { 'max': '768px' },
-                'sm': { 'max': '576px' },
-                'xs': { 'max': '350px' },
-            },
+
         },
     },
     plugins: [],

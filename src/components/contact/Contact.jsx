@@ -76,7 +76,7 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="text-center text-h3 font-medium mb-6">Write me</h3>
 
-                    <form ref={form} onSubmit={sendEmail} className="w-[360px] md:mx-auto sm:w-full">
+                    <form ref={form} onSubmit={sendEmail} className="w-[360px] md:mx-auto sm:w-full sm:max-w-full">
                         <div className="relative mb-8 h-[4rem] xs:mb-6">
                             <label className="absolute top-[-0.75rem] left-[1.25rem] text-small p-1 bg-body z-10">Name</label>
                             <input type="text" name='name' className='absolute top-0 left-0 w-full h-full border-2 border-[rgba(0,0,0,0.3)] bg-transparent text-text outline-none rounded-xl p-6 z-0 focus:border-title sm:p-4' placeholder='enter your name' />

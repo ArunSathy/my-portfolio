@@ -11,7 +11,7 @@ const About = () => {
       <span className="section__subtitle">My Introduction</span>
 
       <div className="container grid grid-cols-2 items-center gap-x-16 lg:grid-cols-1 lg:gap-y-10">
-        <img src={AboutImg} alt="" className='w-[350px] h-[450px] rounded-[1.5rem] justify-self-center lg:w-[220px] lg:h-[280px]' />
+        <img src={AboutImg} alt="" className='w-[350px] h-[450px] rounded-[1.5rem] justify-self-center lg:w-[220px] lg:h-[280px] xs:w-[280px] xs:h-[350px]' />
 
         <div className='lg:text-center'>
           <Info />
