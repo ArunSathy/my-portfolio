@@ -9,13 +9,23 @@ const ParticlesBackground = () => {
         let animationFrameId;
 
         let particles = [];
-        const particleCount = 60;
-        const connectionDistance = 150;
+        let particleCount = 100;
+        let connectionDistance = 150;
         const mouse = { x: null, y: null, radius: 100 };
 
         const resizeCanvas = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
+
+            // Adjust density for mobile
+            if (window.innerWidth <= 768) {
+                particleCount = 30;
+                connectionDistance = 100;
+            } else {
+                particleCount = 100;
+                connectionDistance = 150;
+            }
+
             initParticles();
         };
 
