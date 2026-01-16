@@ -10,6 +10,19 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        const formData = new FormData(form.current);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+
+        if (!name || !email || !message) {
+            setNotification({
+                message: 'Please fill in all the required fields.',
+                type: 'error'
+            });
+            return;
+        }
+
         emailjs
             .sendForm('service_edrx13y', 'template_f5zzsbi', form.current, {
                 publicKey: 'hNgtQlV2nhRMSNitp',

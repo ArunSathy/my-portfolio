@@ -66,10 +66,10 @@ const Header = () => {
 
                     </ul>
 
-                    <i className='uil uil-times nav__close hidden md:block md:absolute md:right-[1.3rem] md:bottom-[0.5rem] md:text-[1.5rem] md:cursor-pointer md:text-title md:hover:text-title-dark' onClick={() => showMenu(!Toggle)}></i>
+                    <i className='uil uil-times nav__close hidden md:block md:absolute md:right-[1.3rem] md:bottom-[0.5rem] md:text-[1.5rem] md:text-title md:hover:text-title-dark' onClick={() => showMenu(!Toggle)}></i>
                 </div>
 
-                <div className="nav__toggle hidden md:block md:text-[1.1rem] md:cursor-pointer text-title font-medium" onClick={() => showMenu(!Toggle)}>
+                <div className="nav__toggle hidden md:block md:text-[1.1rem] text-title font-medium" onClick={() => showMenu(!Toggle)}>
                     <i class="uil uil-apps"></i>
                 </div>
             </nav>
