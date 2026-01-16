@@ -9,21 +9,21 @@ const Qualification = () => {
     }
 
     return (
-        <section className="section" id='qualification'>
-            <h2 className="section__title">Qualification</h2>
-            <span className="section__subtitle">My Personal Journey</span>
+        <section className="py-24 pb-8 md:py-8 md:pb-16" id='qualification'>
+            <h2 className="text-h1 text-title text-center font-bold mb-3">Qualification</h2>
+            <span className="block text-small mb-16 text-center md:mb-12">My Personal Journey</span>
 
-            <div className="container max-w-[768px]">
+            <div className="max-w-[768px] mx-auto px-6 md:px-4 xs:px-2">
 
                 <div className="flex justify-center mb-8">
 
-                    <div className={toggleState === 1 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 button--flex sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors button--flex sm:mx-3"} onClick={() => toggleTab(1)} >
+                    <div className={toggleState === 1 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 inline-flex items-center sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors inline-flex items-center sm:mx-3"} onClick={() => toggleTab(1)} >
 
                         <i className="uil uil-graduation-cap text-[1.8rem] mr-1"></i>
                         Education
                     </div>
 
-                    <div className={toggleState === 2 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 button--flex sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors button--flex sm:mx-3"} onClick={() => toggleTab(2)}>
+                    <div className={toggleState === 2 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 inline-flex items-center sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors inline-flex items-center sm:mx-3"} onClick={() => toggleTab(2)}>
                         <i className="uil uil-briefcase-alt text-[1.8rem] mr-1"></i>
                         Experience
                     </div>

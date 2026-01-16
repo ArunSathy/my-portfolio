@@ -35,11 +35,11 @@ const Contact = () => {
     const closeNotification = () => setNotification(null);
 
     return (
-        <section className="contact section" id="contact">
-            <h2 className="section__title">Contact Me</h2>
-            <span className="section__subtitle">Get in Touch</span>
+        <section className="contact py-24 pb-8 md:py-8 md:pb-16" id="contact">
+            <h2 className="text-h1 text-title text-center font-bold mb-3">Contact Me</h2>
+            <span className="block text-small mb-16 text-center md:mb-12">Get in Touch</span>
 
-            <div className="container grid grid-cols-[repeat(2,max-content)] justify-center gap-x-24 pb-12 lg:gap-x-12 md:grid-cols-1 md:gap-y-12">
+            <div className="max-w-[968px] mx-auto px-6 md:px-4 xs:px-2 grid grid-cols-[repeat(2,max-content)] justify-center gap-x-24 pb-12 lg:gap-x-12 md:grid-cols-1 md:gap-y-12">
 
                 <div className="contact__content">
                     <h3 className="text-center text-h3 font-medium mb-6">Talk to me</h3>
@@ -92,8 +92,8 @@ const Contact = () => {
                             <textarea name="message" cols="30" rows="10" placeholder='enter your message' className='absolute top-0 left-0 w-full h-full border-2 border-[rgba(0,0,0,0.3)] bg-transparent text-text outline-none rounded-xl p-6 z-0 resize-none focus:border-title'></textarea>
                         </div>
 
-                        <button className="button button--flex">Send Message
-                            <i class="uil uil-message button__icon"></i>
+                        <button className="inline-block bg-title text-container py-5 px-8 rounded-2xl font-medium hover:bg-title-dark transition-colors lg:py-4 lg:px-7 inline-flex items-center">Send Message
+                            <i class="uil uil-message ml-2 lg:w-[22px] lg:h-[22px]"></i>
                         </button>
 
                     </form>

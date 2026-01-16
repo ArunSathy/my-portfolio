@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="bg-container border-t border-[rgba(0,0,0,0.1)]">
-            <div className="container py-8">
-                <h1 className="text-title text-center mb-8 font-medium">Arun Sathyan</h1>
+            <div className="max-w-[968px] mx-auto px-6 md:px-4 xs:px-2 py-8">
+                <h1 className="text-title text-center mb-8 font-bold">Arun Sathyan</h1>
 
                 {/* <ul className="footer__list">
                     <li>
