@@ -20,6 +20,7 @@ module.exports = {
             },
             fontFamily: {
                 body: ["Poppins", "sans-serif"],
+                logo: ["Delius", "cursive"],
             },
             fontSize: {
                 big: "3.5rem",

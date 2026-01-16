@@ -25,7 +25,7 @@ const Footer = () => {
 
                     <a href="https://github.com/ArunSathy" className="bg-title text-container p-[0.4rem] rounded-lg inline-flex text-[1.125rem] hover:bg-title-dark transition-colors lg:p-1 lg:rounded lg:text-[1rem]" target='_blank' rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
                 </div>
-                <span className='block mt-[4.5rem] text-title text-center text-smaller'>
+                <span className='block mt-[2.5rem] sm:mb-10 text-title text-center text-smaller'>
                     &#169; Arun Sathyan. All rights reserved.
                 </span>
             </div>

@@ -6,7 +6,7 @@ import ProfileImg from '../../assets/profile.jpg';
 
 const Home = () => {
     return (
-        <section className="py-24 pb-8 md:py-8 md:pb-16 mb-[130px]" id="home">
+        <section className="py-24 pb-8 md:py-8 md:pb-16 mb-24 md:mb-12" id="home">
             <div className="max-w-[968px] mx-auto px-6 md:px-4 xs:px-2 grid gap-y-12 md:gap-y-10">
                 <div className="grid grid-cols-[116px_repeat(2,1fr)] pt-[5.5rem] gap-x-8 items-center lg:grid-cols-[100px_repeat(2,1fr)] lg:gap-x-5 lg:pt-[3.5rem] md:grid-cols-[0.5fr_3fr] md:pt-[3.5rem]">
                     <Social />

@@ -17,13 +17,13 @@ const Qualification = () => {
 
                 <div className="flex justify-center mb-8">
 
-                    <div className={toggleState === 1 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 inline-flex items-center sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors inline-flex items-center sm:mx-3"} onClick={() => toggleTab(1)} >
+                    <div className={toggleState === 1 ? "text-h3 font-medium text-container mx-4 cursor-pointer bg-title rounded-xl text-center p-[0.35rem_1rem] inline-flex items-center sm:mx-3 transition-all duration-300" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-all duration-300 inline-flex items-center sm:mx-3"} onClick={() => toggleTab(1)} >
 
                         <i className="uil uil-graduation-cap text-[1.8rem] mr-1"></i>
                         Education
                     </div>
 
-                    <div className={toggleState === 2 ? "text-h3 font-medium text-title-dark mx-4 cursor-pointer bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center px-2 inline-flex items-center sm:mx-3" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-colors inline-flex items-center sm:mx-3"} onClick={() => toggleTab(2)}>
+                    <div className={toggleState === 2 ? "text-h3 font-medium text-container mx-4 cursor-pointer bg-title rounded-xl text-center p-[0.35rem_1rem] inline-flex items-center sm:mx-3 transition-all duration-300" : "text-h3 font-medium text-title mx-4 cursor-pointer hover:text-title-dark transition-all duration-300 inline-flex items-center sm:mx-3"} onClick={() => toggleTab(2)}>
                         <i className="uil uil-briefcase-alt text-[1.8rem] mr-1"></i>
                         Experience
                     </div>
