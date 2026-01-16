@@ -9,6 +9,10 @@ const CustomCursor = () => {
     const isVisible = useRef(false);
 
     useEffect(() => {
+        // Only run on desktop with precise pointer
+        const isDesktop = window.matchMedia('(pointer: fine)').matches && window.innerWidth > 992;
+        if (!isDesktop) return;
+
         // Force hide system cursor across the entire app with a transparent cursor failsafe
         const style = document.createElement('style');
         style.innerHTML = `
@@ -68,6 +72,10 @@ const CustomCursor = () => {
             if (style.parentNode) style.parentNode.removeChild(style);
         };
     }, []);
+
+    // Only render the cursor elements if we are on a desktop with a fine pointer
+    const isDesktop = typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches && window.innerWidth > 992;
+    if (!isDesktop) return null;
 
     return (
         <>
