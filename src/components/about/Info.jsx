@@ -13,7 +13,7 @@ const Info = () => {
       <div className="bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center p-[1rem_1.25rem] lg:p-[0.75rem_0.5rem]">
         <i class="uil uil-award-alt text-[1.5rem] text-title mb-2 block"></i>
         <h3 className="text-small font-medium text-title">Completed</h3>
-        <span className="text-tiny text-text">3 Projects</span>
+        <span className="text-tiny text-text">4 Projects</span>
       </div>
 
       <div className="bg-container border border-[rgba(0,0,0,0.1)] rounded-xl text-center p-[1rem_1.25rem] lg:p-[0.75rem_0.5rem]">

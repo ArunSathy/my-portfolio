@@ -96,7 +96,7 @@ const Qualification = () => {
                                 <h3 className="text-normal font-medium">Digital Marketing Associate</h3>
                                 <span className="inline-block text-small mb-4">Amazon</span>
                                 <div className="text-small">
-                                    <i className="uil uil-calendar-alt"></i> 2022 - Present
+                                    <i className="uil uil-calendar-alt"></i> 2022 - 2026
                                 </div>
                             </div>
 
