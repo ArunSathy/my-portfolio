@@ -10,12 +10,10 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Project from './components/project/Project';
 import ParticlesBackground from './components/background/ParticlesBackground';
-import CustomCursor from './components/cursor/CustomCursor';
 
 function App() {
   return (
     <>
-      <CustomCursor />
       <ParticlesBackground />
       <Header />
 
